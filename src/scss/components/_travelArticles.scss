@@ -1,0 +1,80 @@
+.travel-articles {
+    grid-area: 3/1/4/2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+    gap: 0.5rem;
+    @include desktop {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .travel-article-box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+       text-align: center;
+        border: 1px solid #FCF2EA;
+        .travel-picture {
+            width: 100%;
+            height: 300px;
+            background-size: cover;
+            background-position: center;     
+        }
+        .picture-title {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.5rem;
+            font-weight: bold;
+            padding: 1rem 0;
+        }
+        .travel-text {
+            font-size: 1.5rem;
+            text-transform: uppercase;
+        }
+        .read-more {
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            padding: 2rem 0;
+        }
+    }
+}
+
+.couples {
+    .couples-picture {
+        background-image: url(../../images/couples-picture.jpg);
+    }
+    @include desktop {
+        grid-area: 1/1/2/2;
+    }
+}
+.oceania {
+    .oceania-picture {
+        background-image: url(../../images/oceania-picture.jpg);
+ 
+    }
+    @include desktop {
+        grid-area: 1/2/2/3;
+    }
+}
+.adventures {
+    .adventures-picture {
+        background-image: url(../../images/adventures-picture.jpg);
+    }
+    @include desktop {
+        grid-area: 1/3/2/4;
+    }
+}
+.europe {
+    .europe-picture {
+        background-image: url(../../images/europe-picture.jpg);
+    }
+    @include desktop {
+        grid-area: 1/4/2/5;
+    }
+}
+.africa {
+    .africa-picture {
+        background-image: url(../../images/africa-picture.jpg);
+    }
+    @include desktop {
+        grid-area: 1/5/2/6;
+    }
+}
